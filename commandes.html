@@ -12,12 +12,12 @@
     <meta name="theme-color" content="#2196F3">
     <meta content="https://cdn.discordapp.com/avatars/713399569857118330/9db22fcb39a79f300b9b6d5df3984a47.png?size=1024" property="og:image" />
     <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/avatars/713399569857118330/9db22fcb39a79f300b9b6d5df3984a47.png?size=1024">
-    <meta content="Commandes D'Ilan Bot" property="og:title" />
+    <meta content="Commandes de YZZY" property="og:title" />
 
     <meta content="Commandes." property="og:description" />
-    <meta content="Les Commandes De ๖̶ζ͜͡Kurama-Protect" name="description" />
+    <meta content="Les Commandes De YZZY" name="description" />
     <meta property="og:site_name" content="Commandes" />
-    <meta property="og:url" content="https://kurama0001.github.io/commandes.html"/>
+    <meta property="og:url" content="https://yzzy-bot.github.io/commandes.html"/>
 
     <!-- CSS -->
     <link href="https://modesta.alexflipnote.dev/css/modesta.css" type="text/css" rel="stylesheet">
@@ -53,293 +53,149 @@
             <div class="container">
                 <section class="me">
                 <div class="unset"><h1 class="title">Commandes</h1></div>
-              <div class="undertitle">Prefix "k."</h3></div>
+              <div class="undertitle">Prefix par defaut "%"</h3></div>
                 </section>
                 <div class="buttons">
-                    <a href="#administration" class="bold btn animation hover spotify-border">Administration</a>
-                    <a href="#modo" class="bold btn animation hover spotify-border">Modération</a>
-                    <a href="#information" class="bold btn animation hover spotify-border">Information</a>
-                    <a href="#fun" class="bold btn animation hover spotify-border">Amusements</a>
-                    <a href="#utils" class="bold btn animation hover spotify-border">Utilitaires</a>
+                    <a href="#admin" class="bold btn animation hover spotify-border">Administration</a>
+                    <a href="#exp" class="bold btn animation hover spotify-border">Experience</a>
+                    <a href="#giv" class="bold btn animation hover spotify-border">Giveaway</a>
+                    <a href="#img" class="bold btn animation hover spotify-border">Images</a>
+                    <a href="#info" class="bold btn animation hover spotify-border">Information</a>
                     </div>
                 <div class="buttons">
-                    <a href="#images" class="bold btn animation hover spotify-border">Images</a>
-                    <a href="https://kurama0001.github.io/" class="bold btn animation hover youtube-border">Retour A L'accueil</a>
+                    <a href="#jeu" class="bold btn animation hover spotify-border">Jeu</a>
+                    <a href="#modo" class="bold btn animation hover spotify-border">Moderation</a>
+                    <a href="#music" class="bold btn animation hover spotify-border">Musique</a>
+                    <a href="#nsfw" class="bold btn animation hover spotify-border">Nsfw</a>
+                    <a href="#a" class="bold btn animation hover spotify-border">Autres</a>
+                </div>
+                <div class="buttons">
+                    <a href="https://yzzy-bot.github.io/" class="bold btn animation hover youtube-border">Retour A L'accueil</a>
                 </div>
             </div>
         </div>
     </section>
     <section class="container">
         <a href="#top" id="myBtn" title="Go to top">Back to Top</a>
-        <div class="demo-container" id="administration">
+        <div class="demo-container" id="admin">
             <h3 class="title">Administration</h3>
             <div class="container">
             <table style="width:100%">
                 <tr>
                   <th>Nom De La Commande</th>
-                  <th>Déscription</th>
+                  <th>Description</th>
                   <th>Usage</th>
+                  <th>Alias</th>
                 </tr>
                 <tr>
-                  <td width="20%">setup</td>
-                  <td width="50%">Créer Les Logs</td>
-                  <td width="30%">k.setup</td>
+                  <td width="15%">call-staff</td>
+                  <td width="20%">Appeler un membre du staff</td>
+                  <td width="30%">%call-staff [raison]</td>
+                  <td width="25%">call-staff, c-s, call-staffs</td>
                 </tr>
                 <tr>
-                    <td width="20%">raid_mode</td>
-                    <td width="50%">Bloquer/Débloquer Tous Les Salons Du Serveur</td>
-                    <td width="30%">k.raid_mode [on/off]</td>
+                    <td width="15%">config</td>
+                    <td width="20%">Configurer le bot</td>
+                    <td width="30%">%config [objet a modifier] [modification]</td>
+                    <td width="25%">config</td>
                 </tr>
                 <tr>
-                    <td width="20%">say</td>
-                    <td width="50%">Le Bot Va Répéter Votre Message</td>
-                    <td width="30%">k.say [Votre Message]</td>
+                    <td width="15%">poll</td>
+                    <td width="20%">Creer un sondage</td>
+                    <td width="30%">%poll [#channel] [sondage]</td>
+                    <td width="25%">poll, sondage</td>
                 </tr>
                 <tr>
-                    <td width="20%">dm</td>
-                    <td width="50%">Envoyer Un Message Privé A L'utilisateur</td>
-                    <td width="30%">k.dm [@Membre/ID]</td>
+                    <td width="15%">raid-mode</td>
+                    <td width="20%">Active le mode raid</td>
+                    <td width="30%">%raid-mode [on/off]</td>
+                    <td width="25%">raid-mode, r-m, raidMode</td>
                 </tr>
                 <tr>
-                    <td width="20%">annonce</td>
-                    <td width="50%">Créer Une Annonce</td>
-                    <td width="30%">k.annonce #Salon/ID_DU_SALON [Votre Message]</td>
+                    <td width="15%">slowmode</td>
+                    <td width="20%">Modifier le slowmode d'un channel</td>
+                    <td width="30%">%slowmode [temps]</td>
+                    <td width="25%">slowmode</td>
                 </tr>
-                <tr>
-                    <td width="20%">poll</td>
-                    <td width="50%">Créer Un Sondage</td>
-                    <td width="30%">k.poll #Salon/ID_DU_SALON [Votre Sondage]</td>
-                    </tr>
-                    <tr>
-                      <td width="20%">leaderboard</td>
-                      <td width="50%">Voir Les Invitations Du Serveur</td>
-                      <td width="30%">k.leaderboard</td>
         </table>
             </div>
         </div>
-        <div class="demo-container" id="modo">
-            <h3 class="title">Modération</h3>
+
+        <div class="demo-container" id="exp">
+            <h3 class="title">Experience</h3>
             <div class="container">
             <table style="width:100%">
-              <tr>
-                <th>Nom De La Commande</th>
-                <th>Déscription</th>
-                <th>Usage</th>
-              </tr>
-
-            <tr>
-                <td width="20%">ban</td>
-                <td width="50%">Bannir Un Utilisateur</td>
-                <td width="30%">k.ban @Membre/ID</td>
-            </tr>
-            <tr>
-                <td width="20%">unban</td>
-                <td width="50%"> Débannir Un Utilisateur</td>
-                <td width="30%">k.unban ID</td>
-            </tr>
-            <tr>
-                <td width="20%">kick</td>
-                <td width="50%">Exclure Un Utilisateur</td>
-                <td width="30%">k.kick @Membre/ID</td>
-            </tr>
-            <tr>
-                <td width="20%">mute</td>
-                <td width="50%">Mute Un Utilisateur</td>
-                <td width="30%">k.mute @Membre/ID Temps</td>
-            </tr>
-            <tr>
-                <td width="20%">unmute</td>
-                <td width="50%">Unmute Un Utilisateur</td>
-                <td width="30%">k.unmute @Membre/ID</td>
-            </tr>
-            <tr>
-                <td width="20%">warn</td>
-                <td width="50%">Warn Un Utilisateur</td>
-                <td width="30%">k.warn @Membre/ID Raison</td>
-            </tr>
-            <tr>
-                <td width="20%">clear</td>
-                <td width="50%">Clear Des Messages</td>
-                <td width="30%">k.clear [1/99]</td>
-            </tr>
-            <tr>
-                <td width="20%">purge</td>
-                <td width="50%">Purge Les Messages D'un Utilisateur</td>
-                <td width="30%">k.purge @Membre/ID [1/99]</td>
-            </tr>
-            <tr>
-                <td width="20%">addrole</td>
-                <td width="50%">Ajouté Un Rôle A Un Utilisateur</td>
-                <td width="30%">k.addrole @Membre/ID @Rôle</td>
-            </tr>
-            <tr>
-                <td width="20%">delrole</td>
-                <td width="50%">Supprimé Un Rôle A Un Utilisateur</td>
-                <td width="30%">k.delrole @Membre/ID @Rôle</td>
+                <tr>
+                  <th>Nom De La Commande</th>
+                  <th>Description</th>
+                  <th>Usage</th>
+                  <th>Alias</th>
                 </tr>
                 <tr>
-                  <td width="20%">close</td>
-                  <td width="50%">Fermer Un Ticket</td>
-                  <td width="30%">k.close</td>
-            </tr>
-        </table>
-        </div>
-        </div>
-        <div class="demo-container" id="information">
-            <h3 class="title">Information</h3>
-            <div class="container">
-                <table style="width:100%">
-                    <tr>
-                      <th>Nom De La Commande</th>
-                      <th>Déscription</th>
-                      <th>Usage</th>
-                    </tr>
-                    <tr>
-                        <td width="20%">userinfo</td>
-                        <td width="50%">Avoir Les Informations De L'utilisateur</td>
-                        <td width="30%">k.userinfo @Membre/ID</td>
-                    </tr>
-                    <tr>
-                        <td width="20%">servinfo</td>
-                        <td width="50%">Avoir Les Informations Sur Le Serveur</td>
-                        <td width="30%">k.servinfo</td>
-                    </tr>
-                    <tr>
-                        <td width="20%">botinfo</td>
-                        <td width="50%">Avoir Les Informations Sur Le Bot</td>
-                        <td width="30%">k.botinfo</td>
-                    </tr>
-                    <tr>
-                        <td width="20%">weather</td>
-                        <td width="50%">Avoir La Météo D'un Endroit Indiquer</td>
-                        <td width="30%">k.weather [Localisation]</td>
-                    </tr>
-                    <tr>
-                        <td width="20%">covid</td>
-                        <td width="50%">Avoir Les Informations Sur Le Covid-19</td>
-                        <td width="30%">k.covid </td>
-                    </tr>
-                    <tr>
-                        <td width="20%">ping</td>
-                        <td width="50%">Avoir La Latence Du Bot Et De Discord</td>
-                        <td width="30%">k.ping</td>
-                        </tr>
-                        <tr>
-                          <td width="20%">uptime</td>
-                          <td width="50%">Savoir Combien De Temps Le Bot Est En Ligne</td>
-                          <td width="30%">k.uptime</td>
-                    </tr>
+                  <td width="15%">addexperience</td>
+                  <td width="20%">Ajoute de l'experience a l'utilisateur</td>
+                  <td width="30%">%addexperience [@user] [exp a ajouter]</td>
+                  <td width="25%">addexperience, addexp</td>
+                </tr>
+                <tr>
+                    <td width="15%">removeexperience</td>
+                    <td width="20%">Retire de l'experience a l'utilisateur</td>
+                    <td width="30%">%removeexperience [@user] [exp a retirer]</td>
+                    <td width="25%">removeexperience, remexp</td>
+                </tr>
+                <tr>
+                    <td width="15%">userexperience</td>
+                    <td width="20%">Renvoie l'exp de l'utilisateur</td>
+                    <td width="30%">%userexperience [@user]</td>
+                    <td width="25%">userexperience, uexp</td>
+                </tr>
+                <tr>
+                    <td width="15%">leaderboard</td>
+                    <td width="20%">Classement d'experience des utilisateur</td>
+                    <td width="30%">%leaderboard</td>
+                    <td width="25%">leaderboard, classement, leadexp, exp</td>
+                </tr>
                 </table>
             </div>
         </div>
-        <div class="demo-container" id="fun">
-            <h3 class="title">Amusements</h3>
-            <div class="container">
-            <table style="width:100%">
-            <tr>
-                <th>Nom De La Commande</th>
-                <th>Déscription</th>
-                <th>Usage</th>
-            </tr>
-            <tr>
-                <td width="20%">dice</td>
-                <td width="50%">Le Bot Va Lancer Les Dés</td>
-                <td width="30%">k.dice</td>
-            </tr>
-            <tr>
-                <td width="20%">8ball</td>
-                <td width="50%">Le Bot Va Répondre A Votre Question</td>
-                <td width="30%">k.8ball [Votre Question]</td>
-            </tr>
-            <tr>
-                <td width="20%">coins</td>
-                <td width="50%">Le Bot Va Lancer Une Pièce</td>
-                <td width="30%">k.coins</td>
-            </tr>
-            <tr>
-                <td width="20%">meme</td>
-                <td width="50%">Avoir Une Image Drôle</td>
-                <td width="30%">k.meme</td>
-              </tr>
-              <td width="20%">combat</td>
-                <td width="50%">Faire Un Combat Avec Un Utilisateur</td>
-                <td width="30%">k.combat @Membre/ID</td>
-              </tr>
-              <td width="20%">couple</td>
-                <td width="50%">Voir Combien De Chance Vous Avez D'être En Couple</td>
-                <td width="30%">k.couple @Membre/ID</td>
-              </tr>
-            </tr>
-        </table>
-        </div>
-        </div>
-        <div class="demo-container" id="utils">
-            <h3 class="title">Utilitaires</h3>
-            <div class="container">
-            <table style="width:100%">
-            <tr>
-                <th>Nom De La Commande</th>
-                <th>Déscription</th>
-                <th>Usage</th>
-            </tr>
-            <tr>
-                <td width="20%">avatar</td>
-                <td width="50%">Avoir L'avatar De L'utilisateur</td>
-                <td width="30%">k.avatar @Membre</td>
-            </tr>
-            <tr>
-                <td width="20%">maths</td>
-                <td width="50%">Avoir La Réponse A Votre Calcul</td>
-                <td width="30%">k.maths [2*6/2+9/2-1/...]</td>
-            </tr>
-            <tr>
-                <td width="20%">ticket</td>
-                <td width="50%">Créer Un Ticket</td>
-                <td width="30%">k.ticket</td>
-            </tr>
-            <tr>
-                <td width="20%">ascii</td>
-                <td width="50%">Ecrire Un Texte En Gros</td>
-                <td width="30%">k.ascii [Texte]</td>
-            </tr>
-          </tr>
-        </table>
-        </div>
-        </div>
-        <div class="demo-container" id="images">
-            <h3 class="title">Images</h3>
-            <div class="container">
-            <table style="width:100%">
-            <tr>
-                <th>Nom De La Commande</th>
-                <th>Déscription</th>
-                <th>Usage</th>
-            </tr>
 
-            <tr>
-                <td width="20%">fox</td>
-                <td width="50%">Avoir Une Image De Renard</td>
-                <td width="30%">k.fox</td>
+        <div class="demo-container" id="exp">
+            <h3 class="title">Experience</h3>
+            <div class="container">
+            <table style="width:100%">
+                <tr>
+                  <th>Nom De La Commande</th>
+                  <th>Description</th>
+                  <th>Usage</th>
+                  <th>Alias</th>
                 </tr>
-                <td width="20%">cat</td>
-                <td width="50%">Avoir Une Image De Chat</td>
-                <td width="30%">k.cat</td>
+                <tr>
+                  <td width="15%">addexperience</td>
+                  <td width="20%">Ajoute de l'experience a l'utilisateur</td>
+                  <td width="30%">%addexperience [@user] [exp a ajouter]</td>
+                  <td width="25%">addexperience, addexp</td>
                 </tr>
-                <td width="20%">dog</td>
-                <td width="50%">Avoir Une Image De Chien</td>
-                <td width="30%">k.dog</td>
+                <tr>
+                    <td width="15%">removeexperience</td>
+                    <td width="20%">Retire de l'experience a l'utilisateur</td>
+                    <td width="30%">%removeexperience [@user] [exp a retirer]</td>
+                    <td width="25%">removeexperience, remexp</td>
                 </tr>
-                <td width="20%">koala</td>
-                <td width="50%">Avoir Une Image De Koala</td>
-                <td width="30%">k.koala</td>
+                <tr>
+                    <td width="15%">userexperience</td>
+                    <td width="20%">Renvoie l'exp de l'utilisateur</td>
+                    <td width="30%">%userexperience [@user]</td>
+                    <td width="25%">userexperience, uexp</td>
                 </tr>
-                <td width="20%">k.panda</td>
-                <td width="50%">Avoir Une Image De Panda</td>
-                <td width="30%">k.panda</td>
+                <tr>
+                    <td width="15%">leaderboard</td>
+                    <td width="20%">Classement d'experience des utilisateur</td>
+                    <td width="30%">%leaderboard</td>
+                    <td width="25%">leaderboard, classement, leadexp, exp</td>
                 </tr>
-            </tr>
-        </table>
-    </div>
+                </table>
+            </div>
+        </div>
     </section>
     
     <footer class="center box-container black no-border-radius">
